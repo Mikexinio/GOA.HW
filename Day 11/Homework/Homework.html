@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ჩემი საიტი</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            padding: 20px;
+        }
+        .gallery img {
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            width: 150px; /* Default size */
+        }
+        .large {
+            width: 300px; /* Larger image */
+        }
+        .wide {
+            width: 400px; /* Wide image */
+        }
+        .link-image {
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="#home">სახლი</a>
+    <a href="#about">შესახებ</a>
+    <a href="#services">სერვისები</a>
+    <a href="#gallery">გალერია</a>
+    <a href="#contact">კონტაქტი</a>
+</nav>
+
+<h1>მოგესალმებით ჩემს საიტზე!</h1>
+
+<section class="gallery">
+    <img src="https://via.placeholder.com/150" alt="პირველი ფოტო">
+    <img src="https://via.placeholder.com/150x100" alt="მეორე ფოტო" class="wide">
+    <img src="https://via.placeholder.com/200" alt="მესამე ფოტო" class="large">
+    <img src="https://via.placeholder.com/100x150" alt="მეოთხე ფოტო">
+    <img src="https://via.placeholder.com/250" alt="მეხუთე ფოტო">
+</section>
+
+<h2>საიტის ლინკები ფოტოებში</h2>
+
+<div class="link-image">
+    <a href="https://example.com">
+        <img src="https://via.placeholder.com/200" alt="პირველი ლინკი">
+    </a>
+</div>
+<div class="link-image">
+    <a href="https://example.com">
+        <img src="https://via.placeholder.com/300" alt="მეორე ლინკი">
+    </a>
+</div>
+
+</body>
+</html>
