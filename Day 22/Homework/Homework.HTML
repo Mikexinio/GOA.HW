@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>დივ ბლოკები</title>
+    <style>
+        .blue-block {
+            background-color: lightblue; /* ლურჯი ფონდი */
+            padding: 20px;
+            margin: 10px;
+        }
+        .green-block p:nth-child(1),
+        .green-block p:nth-child(2),
+        .green-block p:nth-child(3) {
+            background-color: lightgreen; /* მწვანე ფონდი */
+        }
+        .green-block p:nth-child(4) {
+            background-color: yellow; /* ყვითელი ფონდი */
+        }
+        .green-block p:nth-child(5) {
+            background-color: red; /* წითელი ფონდი */
+        }
+        .image-block img {
+            max-width: 100%; /* სურათის ზომის ოპტიმიზაცია */
+            border: 5px solid black; /* საზღვარი სურათისთვის */
+            border-radius: 10px; /* კუთხეების დამრგვალება */
+            margin: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            border: 1px solid black; /* საზღვარი */
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 1. ლურჯი ფონდის დივ ბლოკი -->
+    <div class="blue-block">
+        <p>პარაგრაფი 1</p>
+        <p>პარაგრაფი 2</p>
+        <p>პარაგრაფი 3</p>
+        <p>პარაგრაფი 4</p>
+        <p>პარაგრაფი 5</p>
+    </div>
+
+    <!-- 2. მწვანე, ყვითელი და წითელი ფონდის დივ ბლოკი -->
+    <div class="green-block">
+        <p>პარაგრაფი 1</p>
+        <p>პარაგრაფი 2</p>
+        <p>პარაგრაფი 3</p>
+        <p>პარაგრაფი 4</p>
+        <p>პარაგრაფი 5</p>
+    </div>
+
+    <!-- 3. სურათების დივ ბლოკი -->
+    <div class="image-block">
+        <img src="https://via.placeholder.com/300" alt="სურათი 1">
+        <img src="https://via.placeholder.com/300" alt="სურათი 2">
+    </div>
+
+    <!-- 4. ორი დიდი ცხრილი -->
+    <table>
+        <caption>ცხრილი 1</caption>
+        <tr>
+            <th>თავი 1</th>
+            <th>თავი 2</th>
+            <th>თავი 3</th>
+        </tr>
+        <tr>
+            <td>ციხე 1</td>
+            <td>ციხე 2</td>
+            <td>ციხე 3</td>
+        </tr>
+        <tr>
+            <td>ციხე 4</td>
+            <td>ციხე 5</td>
+            <td>ციხე 6</td>
+        </tr>
+    </table>
+
+    <table>
+        <caption>ცხრილი 2</caption>
+        <tr>
+            <th>ფუნქცია 1</th>
+            <th>ფუნქცია 2</th>
+            <th>ფუნქცია 3</th>
+        </tr>
+        <tr>
+            <td>დეტალი 1</td>
+            <td>დეტალი 2</td>
+            <td>დეტალი 3</td>
+        </tr>
+        <tr>
+            <td>დეტალი 4</td>
+            <td>დეტალი 5</td>
+            <td>დეტალი 6</td>
+        </tr>
+    </table>
+
+</body>
+</html>

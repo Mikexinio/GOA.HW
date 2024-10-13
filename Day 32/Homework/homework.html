@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS მაგალითები</title>
+    <style>
+        /* 1. 5 ელემენტი, id-ები */
+        #element1 {
+            color: red;
+            font-size: 20px;
+        }
+        #element2 {
+            color: green;
+            font-size: 22px;
+        }
+        #element3 {
+            color: blue;
+            font-size: 24px;
+        }
+        #element4 {
+            color: orange;
+            font-size: 26px;
+        }
+        #element5 {
+            color: purple;
+            font-size: 28px;
+        }
+
+        /* 2. 5 ელემენტი, class-ები */
+        .class1 {
+            background-color: yellow;
+            padding: 10px;
+        }
+        .class2 {
+            background-color: lightblue;
+            padding: 10px;
+        }
+        .class3 {
+            background-color: lightgreen;
+            padding: 10px;
+        }
+        .class4 {
+            background-color: pink;
+            padding: 10px;
+        }
+        .class5 {
+            background-color: lightgray;
+            padding: 10px;
+        }
+
+        /* 3. ერთი კლასი <p> ელემენტებისთვის */
+        .myClass {
+            color: blue;
+            font-weight: bold;
+        }
+        h1.myClass {
+            color: black; /* <h1> კლასის ფერი */
+        }
+
+        /* 4. მშობელი <button> ელემენტისთვის */
+        button {
+            background-color: darkcyan;
+            color: white;
+            padding: 15px;
+            border: none;
+            cursor: pointer;
+        }
+        button p {
+            color: lightgray; /* შვილზე ეფექტი */
+            margin: 0; /* მშობელს padding-ი */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 1. 5 ელემენტი, id-ები -->
+    <div id="element1">ელემენტი 1</div>
+    <div id="element2">ელემენტი 2</div>
+    <div id="element3">ელემენტი 3</div>
+    <div id="element4">ელემენტი 4</div>
+    <div id="element5">ელემენტი 5</div>
+
+    <!-- 2. 5 ელემენტი, class-ები -->
+    <div class="class1">კლასი 1</div>
+    <div class="class2">კლასი 2</div>
+    <div class="class3">კლასი 3</div>
+    <div class="class4">კლასი 4</div>
+    <div class="class5">კლასი 5</div>
+
+    <!-- 3. 4 ელემენტი, 2 <p> და 2 <h1> -->
+    <p class="myClass">პარაგრაფი 1</p>
+    <h1 class="myClass">ჰედინგი 1</h1>
+    <p class="myClass">პარაგრაფი 2</p>
+    <h1 class="myClass">ჰედინგი 2</h1>
+
+    <!-- 4. მშობელი <button> და შვილი <p> -->
+    <button>
+        <p>ეს არის შვილური პარაგრაფი</p>
+    </button>
+
+    <!-- 5. External CSS -->
+    <link rel="stylesheet" href="styles.css"> <!-- ეს ხაზით უნდა მოიძიოთ ამ კონტექსტში -->
+</body>
+</html>
