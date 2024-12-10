@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex Vertical Layout</title>
+  <style>
+    .container {
+      display: flex;
+      flex-direction: column; /* ვერტიკალური განლაგება */
+      gap: 10px;
+    }
+    .item {
+      background-color: #f0f0f0;
+      padding: 10px;
+      border: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="item">Div 1</div>
+    <div class="item">Div 2</div>
+    <div class="item">Div 3</div>
+    <div class="item">Div 4</div>
+    <div class="item">Div 5</div>
+  </div>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex Wrap Example</title>
+  <style>
+    .container {
+      display: flex;
+      flex-wrap: wrap; /* ელემენტები გადატრიალდება ახალ რიგში */
+      gap: 10px;
+    }
+    .item {
+      background-color: #f0f0f0;
+      padding: 10px;
+      border: 1px solid #ccc;
+      flex: 1 1 200px; /* თითოეული პარაგრაფი 200px სიგანით */
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <p class="item">Paragraph 1</p>
+    <p class="item">Paragraph 2</p>
+    <p class="item">Paragraph 3</p>
+    <p class="item">Paragraph 4</p>
+    <p class="item">Paragraph 5</p>
+  </div>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex Shrink Example</title>
+  <style>
+    .container {
+      display: flex;
+      gap: 10px;
+    }
+    .item {
+      background-color: #f0f0f0;
+      padding: 10px;
+      border: 1px solid #ccc;
+      flex: 1 1 200px; /* თითოეული პარაგრაფი 200px სიგანით */
+      flex-shrink: 1; /* მოცემულ ელემენტებს შეუძლია დაიპყროს სივრცე */
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <p class="item">Paragraph 1</p>
+    <p class="item">Paragraph 2</p>
+    <p class="item">Paragraph 3</p>
+    <p class="item">Paragraph 4</p>
+    <p class="item">Paragraph 5</p>
+  </div>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex Grow Example</title>
+  <style>
+    .container {
+      display: flex;
+      gap: 10px;
+    }
+    .item {
+      background-color: #f0f0f0;
+      padding: 10px;
+      border: 1px solid #ccc;
+      flex-grow: 1; /* ყველა ელემენტი იზრდება და იყოფა თავისუფალ სივრცეს */
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <p class="item">Paragraph 1</p>
+    <p class="item">Paragraph 2</p>
+    <p class="item">Paragraph 3</p>
+    <p class="item">Paragraph 4</p>
+    <p class="item">Paragraph 5</p>
+  </div>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Block and Inline Switch</title>
+  <style>
+    /* ბლოკ ელემენტი ვაქციოთ ინლაინად */
+    .block-to-inline {
+      display: inline;
+      background-color: #f0f0f0;
+      padding: 10px;
+      border: 1px solid #ccc;
+    }
+
+    /* ინლაინ ელემენტი ვაქციოთ ბლოკად */
+    .inline-to-block {
+      display: block;
+      background-color: #d0d0d0;
+      padding: 10px;
+      border: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="inline-to-block">This is a div turned into a block element.</div>
+  <span class="block-to-inline">This is a span turned into an inline element.</span>
+
+  <div class="inline-to-block">Another block element.</div>
+  <span class="block-to-inline">Another inline element.</span>
+
+  <div class="inline-to-block">One more block element.</div>
+  <span class="block-to-inline">One more inline element.</span>
+
+</body>
+</html>

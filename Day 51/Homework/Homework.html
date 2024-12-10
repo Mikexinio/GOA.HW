@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>4 Colored Cubes</title>
+  <style>
+    .container {
+      display: flex;
+      flex-direction: row-reverse;
+      gap: 10px;
+    }
+
+    .cube {
+      width: 100px;
+      height: 100px;
+    }
+
+    .red { background-color: red; }
+    .green { background-color: green; }
+    .blue { background-color: blue; }
+    .yellow { background-color: yellow; }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="cube red"></div>
+    <div class="cube green"></div>
+    <div class="cube blue"></div>
+    <div class="cube yellow"></div>
+  </div>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>5 Div Vertically</title>
+  <style>
+    .container {
+      display: flex;
+      flex-direction: column; 
+      gap: 10px;
+    }
+
+    .item {
+      background-color: #f0f0f0;
+      padding: 10px;
+      border: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="item">Div 1</div>
+    <div class="item">Div 2</div>
+    <div class="item">Div 3</div>
+    <div class="item">Div 4</div>
+    <div class="item">Div 5</div>
+  </div>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex Wrap Example</title>
+  <style>
+    .container {
+      display: flex;
+      flex-wrap: wrap; 
+      gap: 10px;
+    }
+
+    .item {
+      background-color: #f0f0f0;
+      padding: 10px;
+      border: 1px solid #ccc;
+      flex: 1 1 150px; 
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <p class="item">Paragraph 1</p>
+    <p class="item">Paragraph 2</p>
+    <p class="item">Paragraph 3</p>
+    <p class="item">Paragraph 4</p>
+    <p class="item">Paragraph 5</p>
+  </div>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex Shrink Example</title>
+  <style>
+    .container {
+      display: flex;
+      gap: 10px;
+    }
+
+    .item {
+      background-color: #f0f0f0;
+      padding: 10px;
+      border: 1px solid #ccc;
+      flex: 1 1 150px;
+      flex-shrink: 1; 
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <p class="item">Paragraph 1</
+
+        <!DOCTYPE html>
+        <html lang="ka">
+        <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Flex Grow Example</title>
+          <style>
+            .container {
+              display: flex;
+              gap: 10px;
+            }
+        
+            .item {
+              background-color: #f0f0f0;
+              padding: 10px;
+              border: 1px solid #ccc;
+              flex: 1 1 150px;
+              flex-grow: 1; /* ყველა ელემენტი იზრდება */
+            }
+          </style>
+        </head>
+        <body>
+        
+          <div class="container">
+            <p class="item">Paragraph 1</p>
+            <p class="item">Paragraph 2</p>
+            <p class="item">Paragraph 3</p>
+            <p class="item">Paragraph 4</p>
+            <p class="item">Paragraph 5</p>
+          </div>
+        
+        </body>
+        </html>
+
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Block to Inline</title>
+  <style>
+    .block-to-inline {
+      display: inline;
+      background-color: #f0f0f0;
+      padding: 10px;
+      border: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="block-to-inline">This is a block element turned into an inline element.</div>
+  <div class="block-to-inline">Another block turned into inline.</div>
+  <div class="block-to-inline">And another one!</div>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inline to Block</title>
+  <style>
+    .inline-to-block {
+      display: block;
+      background-color: #d0d0d0;
+      padding: 10px;
+      border: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+
+  <span class="inline-to-block">This is an inline element turned into a block element.</span>
+  <span class="inline-to-block">Another inline element turned into block.</span>
+  <span class="inline-to-block">One more!</span>
+
+</body>
+</html>
